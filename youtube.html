@@ -1,0 +1,242 @@
+<!--Learned Topics-->
+<!--Nested Layouts, Display Block and Inline Block, Grid, Flexbox, Position-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    
+    </head> 
+    <body> 
+        <header></header>
+        <nav></nav>
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button"> 
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+                    <!--Put position absolute inside position relative-->
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section"> 
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="youtube-apps-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">YouTube Apps</div>
+                </div>
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <div class="current-user-picture-container">
+                    <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+                    <div class="tooltip">Your Channel</div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/library.svg">
+                <div>Library</div>
+            </div>
+        </nav>
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt.png">
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_1.jpg">
+                        </div> 
+                        <div class="video-info">
+                            <p class="video-title">React Tutorial Full Course - Beginner to Pro (React 19, 2025)</p>
+                            <p class="video-author">SuperSimpleDev</p>
+                            <p class="video-stats">488k views &#183; 3 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt2.png">
+                        <div class="video-time">12:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_2.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">All Networking Concepts Explained in 20 Minutes</p>
+                            <p class="video-author">TechWorld with Nana</p>
+                            <p class="video-stats">145k views &#183; 2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt3.png">
+                        <div class="video-time">8:40</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_3.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">The Job Market Has Changed...Again?| What Are My Bets For 2025-26</p>
+                            <p class="video-author">Harkirat Singh</p>
+                            <p class="video-stats">311k views &#183; 3 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt4.png">
+                        <div class="video-time">6:40</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_8.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">"Dopamine Loading" is the EASIEST way to get ADDICTED to studying</p>
+                            <p class="video-author">Matthew Smith</p>
+                            <p class="video-stats">2.3M views &#183; 7 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt5.png">
+                        <div class="video-time">7:27</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_3.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Unfortunately - Coding is this simple</p>
+                            <p class="video-author">Harkirat Singh</p>
+                            <p class="video-stats">121k views &#183; 11 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt6.png">
+                        <div class="video-time">11:16</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_4.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Computer Science FAILURE to $500k</p>
+                            <p class="video-author">Sajjaad Khader</p>
+                            <p class="video-stats">243k views &#183; 7 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt7.png">
+                        <div class="video-time">13:45</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_5.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Why is everyone LYING?</p>
+                            <p class="video-author">NeetCodeIO</p>
+                            <p class="video-stats">404k views &#183; 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt8.png">
+                        <div class="video-time">18:15</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_6.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Who fed Jack Black the Best Burger in the World</p>
+                            <p class="video-author">JOLLY</p>
+                            <p class="video-stats">945k views &#183; 3 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/image_yt9.png">
+                        <div class="video-time">17:14</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile" src="channel-pictures/channel_7.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">We Tried the Budget Teslas...Now We're Confused</p>
+                            <p class="video-author">Everyday Chris and Gjeebs</p>
+                            <p class="video-stats">120k views &#183; 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body> 
+</html>
